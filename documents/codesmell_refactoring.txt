@@ -29,5 +29,5 @@ Refactored:
 Design Patters:
 	-Strategy design pattern
 	-Singleton design pattern
-	-Template design pattern (or builder)
+	-Factory design pattern
 	
