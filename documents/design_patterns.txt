@@ -1,0 +1,6 @@
+Design patterns implimented:
+	-State
+	-Facade
+	-proxy??
+	-Command??
+	-Mediator??
