@@ -1,4 +1,4 @@
-## Requirements:
+## Version 1 Requirements:
 * As a user, I want to manage my time by recording and tracking how I use my time, so that I can keep an inventory of my schedule to refer to.
 * As a user, I am comfortable with the CMD, so I want to use the CMD to record and query my schedule.
 * As a user, I want to record information using the format "DATE FROM TO TASK TAG", because it is a simple format I will be able to remember easily.
