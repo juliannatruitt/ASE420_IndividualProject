@@ -7,7 +7,7 @@
 * NOTE: when i give examples of what different commands look like, I enclose them in quotation marks (""), you should not include those quotation marks when you are entering in your command on the CMD.
 ## Query:
 * A query should be of length 2. Ex) query :STUDY or query 2023/11/21 or query 'java'
-* When querying a tag, you need to make sure you add a colon (:) before the tag. You can write the tag in all uppercase or lowercase, it doesnt matter.
+* When querying a tag, you need to make sure you add a colon (:) before the tag. You must write tag in all uppercase.
 * You can query the date today by either typing in 'query today' or 'query todays_Date'.
 ## Record:
 * A record should be at least a length of 5.
