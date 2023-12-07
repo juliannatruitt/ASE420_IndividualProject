@@ -13,6 +13,6 @@
 * A record should be at least a length of 5.
 * An example of a record is "record today 11:00am 2:00pm 'go to school' :SCHOOL"
 * You can choose not to add am/pm to the time, but it is reccomened that you add it because theres a possiblity that when the priority command counts up the time in each table, it could miscount if there is no am/pm in the record.
-* You can choose to make the tag all uppercase or lowercase, but you must include the colon (:) before.
+* Must have a colon (:) in front of a tag, and the tag must be in all upercase letters or tag wont work.
 * You can make the date today or you can provide a date in the correct format (yyyy/mm/dd)
 * Make sure to enclose your desciption in  single quotes.
