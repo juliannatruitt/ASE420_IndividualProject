@@ -18,13 +18,14 @@ Code Smells:
 	-temp fields: I have some temperary variables in my code that I need to try to eliminate.
 	-refused bequest: Tried out having one of my classes inherit from the CreateConnection class because alot of my classes aggrigate to that class so they can make a database connection, but this inheritance did not make much sense so i removed it.
 	-lazy class: Found some classes from my prototype (maybe getfulldescription?) did not do enough to stay as its own class in my code.
+	-SRP violations: Many of my classes like query, record, and priority have more than one responsiblity like going through tables in the database, adding record to the tables, etc. To follow SRP I made a seperate Table class to handle anything involving the tabels of the database.
 	
 Refactored:
 	-Extract Class: the method to check if a table has already been created was used in both the record and query classes, so I made it into its own class.
 	-self encapsulate field: I realized some of my class's fields were not private, so i updated that for all of the field values in each class.
 	-rename method: some of my methods were not clear enough of sounded similar to one another to the point that it was hard to understand the difference. To avoid having to use comments, I had to come up with some better names.
-	-Extract Method:
-	-Pull Up Methods:
+	-Extract Method: In my priority class I had the caluculation of how many hours was spent in each row of every table to find the table (task) you spent the most time on. The method became very lengthy and violated SRP so extracted the method into a method of its own.
+	-Pull Up Methods: Many of the check input value classes became redundant and had some of the same validation checks, so i pulled all the similiar methods into a superclass and subclasses inherit from it.
 	
 Design Patters:
 	-Strategy design pattern
