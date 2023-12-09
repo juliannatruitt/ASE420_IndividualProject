@@ -5,3 +5,4 @@
 * Users use the CMD to invoke commands.
 * Validation checks on users inputs to ensure that data is being entered correctly.
 * Excpetions (ValueError) are used for incorrect inputs.
+* Classes follow SRP
