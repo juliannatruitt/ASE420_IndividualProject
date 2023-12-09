@@ -1,23 +1,14 @@
-Refactoring methods to use:
-	-extarct class: I had to extract alot of classes but one example is that I had the parseargs in the main but it became too long so i created a whole speperate class for it and then i just make a simple call to it in the main
-	-extract method
-	-pull up methods: There was alot of duplicate methods so i combined the duplication into a class/superclass to reduce the duplication of code.
-	-hide delegation?
-	**-self encapsulate field: Majority of my feilds were not encapsulated. Need to encapsulate to follow OOP principles.
-	?-replace magic number with symbolic constant
-	-
-	
 Code Smells:
-	-duplication : same method (check if table is already created) in two different classes.
-	-long parameter list: the record class takes in 6 parameters
-	-comments: comment to describe what a method does (because there are 2 similar methods). Get rid of comment and come up with a better name.
+	-duplication : same method in two different classes (check if table is created in record and query).
+	-long parameter list: In the validation classses, they took in very long parameters (reduce it to just take an array of inputs instead)
+	-comments: comment to describe what a method does. Get rid of comment and come up with a better name.
 	-dead code: some of the variables I have in my program never get used. Delete that code from the program.
 	-switch statement: try to simplify my switch stataement, or if i can figure out how to get rid of it all together do that, but try to simplfy it to be easier to understand.
 	-large class: The size of my Record class is pretty large compared to the rest, see if there is any way to decrease the size.
 	-long method: try to reduce the length of some of the lengthy methods for better visual.
 	-temp fields: I have some temperary variables in my code that I need to try to eliminate.
-	-refused bequest: Tried out having one of my classes inherit from the CreateConnection class because alot of my classes aggrigate to that class so they can make a database connection, but this inheritance did not make much sense so i removed it.
-	-lazy class: Found some classes from my prototype (maybe getfulldescription?) did not do enough to stay as its own class in my code.
+	-refused bequest: Tried out having one of my classes inherit from the CreateConnection class because alot of my classes depend on that class so they can make a database connection, but this inheritance did not make much sense so i removed it.
+	-lazy class: Found some classes did not do enough to stay as its own class in my code.
 	-SRP violations: Many of my classes like query, record, and priority have more than one responsiblity like going through tables in the database, adding record to the tables, etc. To follow SRP I made a seperate Table class to handle anything involving the tabels of the database.
 	
 Refactored:
@@ -26,9 +17,4 @@ Refactored:
 	-rename method: some of my methods were not clear enough of sounded similar to one another to the point that it was hard to understand the difference. To avoid having to use comments, I had to come up with some better names.
 	-Extract Method: In my priority class I had the caluculation of how many hours was spent in each row of every table to find the table (task) you spent the most time on. The method became very lengthy and violated SRP so extracted the method into a method of its own.
 	-Pull Up Methods: Many of the check input value classes became redundant and had some of the same validation checks, so i pulled all the similiar methods into a superclass and subclasses inherit from it.
-	
-Design Patters:
-	-Strategy design pattern
-	-Singleton design pattern
-	-Factory design pattern
 	

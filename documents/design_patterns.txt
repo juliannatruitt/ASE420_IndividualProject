@@ -1,0 +1,14 @@
+Design Patters:
+	*Strategy Pattern:
+		- I implemented the stratgey pattern to decide which command should be processed based on the users input. It will use the context class to decide if it 
+		is a query, record, report, or priority command and delegade the work to the factory pattern class with the execute method.
+		
+	*Factory Pattern:
+		- The strategy pattern will execute one of the Factory Classes (report, record, query, or priority) and the Facrtory will pass the work to one of the specified
+		validation checks. The factory patten helps seperate concerns and it works with the strategy pattern to create cleaner code.
+		
+	*Singleton:
+		- I implemented the singleton design pattern to make sure there is only one database being used. This is to avoid many databases being created and allows 
+		only one instance of the database.
+	
+	
